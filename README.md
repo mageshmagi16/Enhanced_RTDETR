@@ -27,10 +27,26 @@ pip install -r requirements.txt
 ```
 
 ### Project Files
-File / Folder	Description
-configs/	YAML configuration files for training and inference
-tools/	Scripts for training, testing, and inference
-images/	Sample images for inference and blog illustrations
-videos/	Sample videos for inference
-checkpoints/	Trained model weights and checkpoints
-rtdetr_blog/	Markdown blog post explaining RT-DETR architecture
+configs/
+
+YAML configuration files for training and inference.
+
+tools/
+
+Scripts for training, testing, and inference.
+
+images/
+
+Sample images for inference and blog illustrations.
+
+videos/
+
+Sample videos for inference.
+
+checkpoints/
+
+Trained model weights and checkpoints.
+
+rtdetr_blog/
+
+Markdown blog post explaining RT-DETR architecture and improvements.
