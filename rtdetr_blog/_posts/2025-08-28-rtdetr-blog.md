@@ -175,6 +175,7 @@ The model was trained for **100 epochs** using the filtered dataset and data aug
 Inference was then performed on the following sample image and video using these best weights:  
 
 ![Inference Image](../images/inference_image.jpg)  
+
 ![Inference Video](../images/inference_video.mp4)
 
 ---
@@ -205,13 +206,13 @@ AP Curve:
 
 ## Inference – Images & Videos  
 
-```bash
+```
 # Image inference
 python C:\Users\rtdetr_pytorch\tools\infer.py -c C:\Users\rtdetr_pytorch\configs\rtdetr\rtdetr_r50vd_6x_coco.yml -r C:\Users\rtdetr_pytorch\model.pth -f C:\Users\mages\rtdetr_pytorch\samples\sample_image.jpg -d cuda
 
 # Video inference
 python C:\Users\rtdetr_pytorch\tools\infer.py -c C:\Users\rtdetr_pytorch\configs\rtdetr\rtdetr_r50vd_6x_coco.yml -r C:\Users\rtdetr_pytorch\model.pth -f C:\Users\mages\rtdetr_pytorch\samples\sample_video2.mp4 -d cuda
-
+```
 ---
 
 ## Limitations and Further Improvements
@@ -320,7 +321,7 @@ This makes RT-DETR not just a research paper model, but a practical solution for
 
 ## References
 
-- [RT-DETR Original Paper](https://arxiv.org/abs/2206.01191)  
+- [RT-DETR Original Paper](https://arxiv.org/abs/2304.08069)  
 - [RT-DETR Base paper GitHub](https://github.com/lyuwenyu/RT-DETR)  
 - [Non-Maximum Suppression (NMS)](https://en.wikipedia.org/wiki/Non-maximum_suppression)  
 - [Roboflow RT-DETR Tutorial](https://blog.roboflow.com/rtdetr/)  
