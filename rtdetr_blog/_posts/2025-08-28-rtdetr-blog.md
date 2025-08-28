@@ -313,15 +313,15 @@ This makes RT-DETR not just a research paper model, but a practical solution for
 
 **Enhanced RT-DETR Resources:**  
 
-- [Enhanced RT-DETR Final Report](https://example.com/enhanced_rtdetr_report)  
-- [Enhanced RT-DETR GitHub Repository](https://github.com/yourusername/enhanced_rtdetr)
+- [Enhanced RT-DETR Final Report](https://github.com/mageshmagi16/Enhanced_RTDETR/blob/main/Final%20Report.pdf)  
+- [Enhanced RT-DETR GitHub Repository](https://github.com/mageshmagi16/Enhanced_RTDETR)
 
 ---
 
 ## References
 
 - [RT-DETR Original Paper](https://arxiv.org/abs/2206.01191)  
-- [RT-DETR Base paper GitHub](https://github.com/IDEA-Research/RT-DETR)  
+- [RT-DETR Base paper GitHub](https://github.com/lyuwenyu/RT-DETR)  
 - [Non-Maximum Suppression (NMS)](https://en.wikipedia.org/wiki/Non-maximum_suppression)  
 - [Roboflow RT-DETR Tutorial](https://blog.roboflow.com/rtdetr/)  
  
