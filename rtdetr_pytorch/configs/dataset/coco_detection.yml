@@ -1,0 +1,44 @@
+task: detection
+
+num_classes: 11
+remap_mscoco_category: False
+
+train_dataloader: 
+  type: DataLoader
+  dataset: 
+    type: CocoDetection
+    img_folder: /home/exouser/Downloads/ASPP/coco1/train2017_filtered/
+    ann_file: /home/exouser/Downloads/ASPP/coco1/annotations/instances_train2017_subset_remapped.json
+    transforms:
+      type: Compose
+      ops:
+        - type: RandomResizedCrop
+          size: [640, 640]
+          scale: [0.5, 1.0]
+          ratio: [0.75, 1.33]
+        - type: HorizontalFlip
+          prob: 0.5
+        - type: VerticalFlip
+          prob: 0.5
+        - type: RandomBrightnessContrast
+          prob: 0.2
+        - type: GaussNoise
+          prob: 0.3
+  shuffle: True
+  batch_size: 8
+  num_workers: 4
+  drop_last: True 
+
+val_dataloader:
+  type: DataLoader
+  dataset: 
+    type: CocoDetection
+    img_folder: /home/exouser/Downloads/ASPP/coco1/val2017_filtered/
+    ann_file: /home/exouser/Downloads/ASPP/coco1/annotations/instances_val2017_subset_remapped.json
+    transforms:
+      type: Compose
+      ops: ~  
+  shuffle: False
+  batch_size: 8
+  num_workers: 4
+  drop_last: False

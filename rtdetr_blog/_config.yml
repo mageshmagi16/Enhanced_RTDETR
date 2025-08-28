@@ -1,0 +1,6 @@
+title: "RT-DETR Vision Blog"
+description: "Research blog on RT-DETR and Object Detection"
+author: "Mahesh"
+theme: minima
+plugins:
+  - jekyll-feed
