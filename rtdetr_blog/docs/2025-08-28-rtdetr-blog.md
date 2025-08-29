@@ -21,7 +21,7 @@ Traditionally, models like **YOLO (You Only Look Once)** dominated real-time det
 This is where **RT-DETR (Real-Time DEtection TRansformer)** comes in.  
 It is the **first NMS-free, end-to-end transformer-based real-time detector** that balances accuracy, speed, and training stability.  
 
-In this blog, we will break down RT-DETR architecture step by step in beginner-friendly terms, explain every building block, and finally show **our improvements (data augmentation + custom class filtering + retraining)** that boosted performance.  
+In this blog, we will break down RT-DETR architecture step by step in beginner-friendly terms, explain every building block, and finally show **the improvements (data augmentation + custom class filtering + retraining)** that boosted performance.  
 
 ---
 
@@ -175,13 +175,14 @@ The model was trained for **100 epochs** using the filtered dataset and data aug
 Inference was then performed on the following sample image and video using these best weights:  
 
 ![Inference Image](../images/inference_image.jpg)  
+
 ![Inference Video](../images/inference_video.mp4)
 
 ---
 
 ## Results  
 
-| Metric | Base RT-DETR | Our Improved RT-DETR |  
+| Metric | Base RT-DETR | Improved RT-DETR |  
 |--------|--------------|----------------------|  
 | AP@[0.50:0.95] | 53.10 | **53.57** |  
 | AP@0.50 | 71.30 | **74.31** |  
@@ -205,13 +206,13 @@ AP Curve:
 
 ## Inference – Images & Videos  
 
-```bash
+```
 # Image inference
 python C:\Users\rtdetr_pytorch\tools\infer.py -c C:\Users\rtdetr_pytorch\configs\rtdetr\rtdetr_r50vd_6x_coco.yml -r C:\Users\rtdetr_pytorch\model.pth -f C:\Users\mages\rtdetr_pytorch\samples\sample_image.jpg -d cuda
 
 # Video inference
 python C:\Users\rtdetr_pytorch\tools\infer.py -c C:\Users\rtdetr_pytorch\configs\rtdetr\rtdetr_r50vd_6x_coco.yml -r C:\Users\rtdetr_pytorch\model.pth -f C:\Users\mages\rtdetr_pytorch\samples\sample_video2.mp4 -d cuda
-
+```
 ---
 
 ## Limitations and Further Improvements
@@ -307,7 +308,7 @@ RT-DETR is a game-changer in object detection:
 - Learns object queries end-to-end  
 - Provides real-time inference without post-processing  
 
-With our improvements (class filtering + augmentation + retraining), we achieved higher AP and better performance, especially for large objects.  
+With improvements (class filtering + augmentation + retraining), we achieved a slight increase in AP and better performance, especially for large objects.  
 
 This makes RT-DETR not just a research paper model, but a practical solution for traffic, mobility, and surveillance systems.  
 
@@ -320,7 +321,7 @@ This makes RT-DETR not just a research paper model, but a practical solution for
 
 ## References
 
-- [RT-DETR Original Paper](https://arxiv.org/abs/2206.01191)  
+- [RT-DETR Original Paper](https://arxiv.org/abs/2304.08069)  
 - [RT-DETR Base paper GitHub](https://github.com/lyuwenyu/RT-DETR)  
 - [Non-Maximum Suppression (NMS)](https://en.wikipedia.org/wiki/Non-maximum_suppression)  
 - [Roboflow RT-DETR Tutorial](https://blog.roboflow.com/rtdetr/)  
