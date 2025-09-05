@@ -8,7 +8,7 @@ This project implements **RT-DETR**, an end-to-end **NMS-free object detection m
 
 For a detailed explanation of the **RT-DETR architecture, training process, and improvements**, check out my Medium blog:  
 
-[Enhanced RT-DETR: Real-Time Object Detection Transformer (Medium Blog)](https://medium.com/@YourUsername/rtdetr-real-time-object-detection-transformer-1234567890)
+[Enhanced RT-DETR: Real-Time Object Detection Transformer (Medium Blog)]([https://medium.com/@YourUsername/rtdetr-real-time-object-detection-transformer-1234567890](https://medium.com/@maheshg16/enhanced-rt-detr-real-time-object-detection-df54ec83c2b9))
 
 
 ---
