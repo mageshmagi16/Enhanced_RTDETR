@@ -58,8 +58,3 @@ checkpoints/ - Trained model weights and checkpoints.
 
 rtdetr_blog/ - Markdown blog post explaining RT-DETR architecture and improvements.
 
-## Learn More
-
-For a detailed explanation of the RT-DETR architecture, training process, and improvements, check out my Medium blog:
-
-RT-DETR: Real-Time Object Detection Transformer (Medium Blog)
