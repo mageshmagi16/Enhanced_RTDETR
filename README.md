@@ -10,7 +10,7 @@ For a detailed explanation of the **RT-DETR architecture, training process, and 
 
 [Enhanced RT-DETR: Real-Time Object Detection Transformer (Medium Blog)](https://medium.com/@maheshg16/enhanced-rt-detr-real-time-object-detection-df54ec83c2b9)
 
-
+  
 ---
 
 ## Installation & Setup
