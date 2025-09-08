@@ -5,7 +5,7 @@
 This project implements **RT-DETR**, an end-to-end **NMS-free object detection model** using PyTorch. It achieves better accuracy and real-time inference speed. The repository includes the improved base model, training scripts, inference tools, and a detailed blog post explaining the model and improvements.
 
 ## Learn More  
-
+ 
 For a detailed explanation of the **RT-DETR architecture, training process, and improvements**, check out my Medium blog:  
 
 [Enhanced RT-DETR: Real-Time Object Detection Transformer (Medium Blog)](https://medium.com/@maheshg16/enhanced-rt-detr-real-time-object-detection-df54ec83c2b9)
