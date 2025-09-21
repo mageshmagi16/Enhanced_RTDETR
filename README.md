@@ -1,5 +1,5 @@
 # Enhanced RT-DETR: Real-Time Object Detection Transformer
-
+ 
 **Real-Time Object Detection using Transformer-based Architecture**
 
 This project implements **RT-DETR**, an end-to-end **NMS-free object detection model** using PyTorch. It achieves better accuracy and real-time inference speed. The repository includes the improved base model, training scripts, inference tools, and a detailed blog post explaining the model and improvements.
